@@ -20,7 +20,7 @@ def requires_admin(f: Callable) -> Callable:
         current_email = session.get('email')
         admin_cred = current_app.config.get('ADMIN', '')
         if session.get('email') != current_app.config.get('ADMIN', ''):
-            flash(f'You need to be an administrator to access this page. {current_email} {admin_cred}', 'danger')
+            flash(f'You need to be an administrator to access this page, sorry. {current_email} {admin_cred}', 'danger')
             return redirect(url_for('users.login_user'))
         return f(*args, **kwargs)
 
